@@ -15,11 +15,20 @@ form.addEventListener('submit', function(event) {
         feedback.innerHTML = text;
         if (text.charAt(1) == 'e') { // 'Sent! ...'
             feedback.classList.add('successMessageFeedback');
+            let timeout = setTimeout(function() {
+                feedback.classList.remove('successMessageFeedback')
+                clearTimeout(timeout);
+            }, 5000);
         } else { //'Something ...'
             feedback.classList.add('failedMessageFeedback');
+            let timeout = setTimeout(function() {
+                feedback.classList.remove('failedMessageFeedback')
+                clearTimeout(timeout);
+            }, 5000);
         }
 
     }).catch(function(error) {
         console.error(error);
     })
+
 })

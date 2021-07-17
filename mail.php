@@ -47,7 +47,7 @@ $mail->Body = $bodyContent;
 
 // Send email
 if (!$mail->send()) {
-    echo 'Something went wrong. Please try again or email me directly.';
+    echo 'Something went wrong. You can try emailing me directly at nahumkletkin@gmail.com';
 } else {
-    echo 'Sent! I will answer as quickly as I can!';
+    echo 'Sent! Thank you for contacting me.!';
 }
