@@ -1,3 +1,5 @@
+/*------COLOR VARIABLES-----------*/
+/*--------------BREAKPOINT VARIABLES AND MIXIN-------------------*/
 /*--------------------GENERAL--------------------*/
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -86,6 +88,58 @@ body {
   margin: 0.5vh;
 }
 
+@media (max-width: 1025px) {
+  .primaryText {
+    font-size: 1.3rem;
+  }
+
+  .complementText {
+    font-size: 1rem;
+  }
+
+  .techText {
+    letter-spacing: 0;
+  }
+
+  .projectLink {
+    font-size: 1rem;
+  }
+
+  .socialDetailsSpan {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .socialDetailText {
+    display: none;
+  }
+
+  .socialDetailImg {
+    width: 25px;
+  }
+
+  .socialDetailsSpanWrapper {
+    padding: 0;
+  }
+}
+@media (max-width: 400px) {
+  .primaryText {
+    font-size: 1.1rem;
+  }
+
+  .complementText {
+    font-size: 0.8rem;
+  }
+
+  .techText {
+    font-size: 0.8rem;
+    letter-spacing: 0;
+  }
+
+  .projectLink {
+    font-size: 0.9rem;
+  }
+}
 /*--------------HOME/ABOUT--------------*/
 .homeSection {
   height: 100vh;
@@ -102,6 +156,17 @@ body {
   font-style: italic;
 }
 
+@media (max-width: 1025px) {
+  .headerText {
+    font-size: 3rem;
+  }
+
+  .subHeaderText {
+    font-size: 1rem;
+    font-weight: lighter;
+    font-style: italic;
+  }
+}
 /*--------------PROJECTS--------------*/
 .projectSection {
   display: flex;
@@ -231,6 +296,24 @@ body {
   color: #dda448;
 }
 
+@media (max-width: 1025px) {
+  .projectArticleWrapper {
+    grid-template-columns: 1fr;
+    width: 90vw;
+  }
+
+  .projectSection {
+    width: auto;
+  }
+
+  .collegeFinanceArticleDesktop {
+    display: none;
+  }
+
+  .collegeFinanceArticleMobile {
+    display: grid;
+  }
+}
 /*--------------FOOTER--------------*/
 .footerSection {
   padding: 1vh;

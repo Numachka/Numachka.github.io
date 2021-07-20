@@ -1,3 +1,4 @@
+/*------COLOR VARIABLES-----------*/
 $backgroundColor: #f7f5f5
 $alternateBackgroundColor: #ffffff
 $primaryColor: #284b63
@@ -8,6 +9,9 @@ $errorColor: #e5383b
 $mitushColor: #a20058
 $collegeFinanceColor: #51a7a7
 $droughtColor: #dda448
+/*--------------BREAKPOINT VARIABLES AND MIXIN-------------------*/
+$breakpoint-medium: 1025px
+$breakpoint-small: 400px
 
 /*--------------------GENERAL--------------------*/
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -89,71 +93,46 @@ body
 .socialLink
   margin: 0.5vh
 
-//@media only screen and (max-width: 1025px)
-//
-//{
-//.primaryText {
-//  font-size: 1.3rem;
-//
-//}
-//
-//.complementText {
-//  font-size: 1rem;
-//
-//}
-//
-//.techText {
-//  letter-spacing: 0;
-//
-//}
-//
-//.projectLink {
-//  font-size: 1rem;
-//
-//}
-//
-//.socialDetailsSpan {
-//  grid-template-columns: 1fr;
-//  grid-template-rows: repeat(4, 1fr);
-//
-//}
-//
-//.socialDetailText {
-//  display:none;
-//}
-//
-//.socialDetailImg {
-//  width: 25px;
-//}
-//
-//.socialDetailsSpanWrapper {
-//  padding: 0;
-//}
-//}
+@media(max-width: $breakpoint-medium)
+  .primaryText
+    font-size: 1.3rem
 
-//@media only screen and (max-width: 400px)
-//
-//{
-//.primaryText {
-//  font-size: 1.1rem;
-//
-//}
-//
-//.complementText {
-//  font-size: 0.8rem;
-//
-//}
-//
-//.techText {
-//  font-size: 0.8rem;
-//  letter-spacing: 0;
-//
-//}
-//.projectLink {
-//  font-size: 0.9rem;
-//
-//}
-//}
+  .complementText
+    font-size: 1rem
+
+  .techText
+    letter-spacing: 0
+
+  .projectLink
+    font-size: 1rem
+
+  .socialDetailsSpan
+    grid-template-columns: 1fr
+    grid-template-rows: repeat(4, 1fr)
+
+  .socialDetailText
+    display: none
+
+  .socialDetailImg
+    width: 25px
+
+  .socialDetailsSpanWrapper
+    padding: 0
+
+@media (max-width: $breakpoint-small)
+  .primaryText
+    font-size: 1.1rem
+
+  .complementText
+    font-size: 0.8rem
+
+  .techText
+    font-size: 0.8rem
+    letter-spacing: 0
+
+  .projectLink
+    font-size: 0.9rem
+
 /*--------------HOME/ABOUT--------------*/
 .homeSection
   height: 100vh
@@ -167,23 +146,14 @@ body
   font-weight: lighter
   font-style: italic
 
-//@media only screen and (max-width: 1025px)
-//
-//{
-//.headerText {
-//  font-size: 3rem;
-//
-//}
-//
-//.subHeaderText {
-//  font-size: 1rem;
-//
-//  font-weight:lighter;
-//
-//  font-style:italic;
-//
-//}
-//}
+@media (max-width: $breakpoint-medium)
+  .headerText
+    font-size: 3rem
+
+  .subHeaderText
+    font-size: 1rem
+    font-weight: lighter
+    font-style: italic
 
 /*--------------PROJECTS--------------*/
 .projectSection
@@ -251,7 +221,6 @@ body
 .mitushProjectImage
   box-shadow: none
 
-
 .projectDetails
   padding: 2vh
   display: flex
@@ -295,32 +264,18 @@ body
 .droughtLink
   color: $droughtColor
 
-//@media only screen and (max-width: 1025px)
-//
-//{
-//.projectArticleWrapper {
-//  grid-template-columns: 1fr;
-//  width: 90vw;
-//
-//}
-//.projectSection {
-//
-//  width:auto;
-//
-//}
-//
-//.collegeFinanceArticleDesktop {
-//
-//  display:none;
-//
-//}
-//
-//.collegeFinanceArticleMobile {
-//
-//  display:grid;
-//
-//}
-//}
+@media (max-width: $breakpoint-medium)
+  .projectArticleWrapper
+    grid-template-columns: 1fr
+    width: 90vw
+  .projectSection
+    width: auto
+
+  .collegeFinanceArticleDesktop
+    display: none
+
+  .collegeFinanceArticleMobile
+    display: grid
 
 /*--------------FOOTER--------------*/
 .footerSection
