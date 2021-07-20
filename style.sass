@@ -1,22 +1,13 @@
 $backgroundColor: #f7f5f5
-//
 $alternateBackgroundColor: #ffffff
-//White
 $primaryColor: #284b63
-//Indigo Dye
 $accentColor: #3c6e71
-//Min
 $textColor: #353535
-//Jet
 $alternateTextColor: #a2a7a5
-//Gainsboro
 $errorColor: #e5383b
 $mitushColor: #a20058
-//Jazberry Jam
 $collegeFinanceColor: #51a7a7
-//
 $droughtColor: #dda448
-//Indian Yellow
 
 /*--------------------GENERAL--------------------*/
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -37,20 +28,10 @@ html
 body
   margin: 0
   padding: 0
-
   display: grid
   grid: 1 / repeat(4, 1fr)
   background-color: $backgroundColor
-
-.canvas
-  z-index: -1
-
-  position: absolute
-  top: 0
-  left: 0
-  height: 100vh
-  width: 99vw
-  background-color: $backgroundColor
+  position: relative
 
 .primaryText
   font-family: 'Josefin Slab', serif
@@ -212,6 +193,7 @@ body
   align-items: center
   background-color: $alternateBackgroundColor
   overflow-x: hidden
+  position: relative
 
 .projectArticle
   display: grid
