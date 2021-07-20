@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
     <link href="mitush.css" rel="stylesheet" type="text/css">
     <link href="contact.css" rel="stylesheet" type="text/css">
-    <script src="mitushjewelry.js" type="text/javascript"></script>
-     <script src="https://kit.fontawesome.com/f23d4f8598.js"></script>
-    <link rel="icon" href="./Pictures/logo/logo 20x20.png">
+    <script src="mitush.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/f23d4f8598.js"></script>
+    <link rel="icon" href="../resources/images/mitushImages/logo%2020x20.png">
     <title>Mitush Jewelry</title>
 
 </head>
@@ -19,24 +19,22 @@
 
         <div id="topnavDiv">
             <div id="topnavLogoDiv">
-                <a class="topnavLogoAnchor" href="index.php">
-                    <img src="../Pictures/logo/logo 400 x 400.png" alt="Mitush" id="topnavLogo">
+                <a class="topnavLogoAnchor" href="mitush.html">
+                    <img src="../resources/images/mitushImages/logo%20400%20x%20400.svg" alt="Mitush" id="topnavLogo">
                 </a>
         </div>
         <div id="topnavButtonDiv">
-            <a href="index.php" class="topnavLink ">Home</a>
-            <a href="aboutme.php" class="topnavLink">About</a>
-            <a href="gallery.php" class="topnavLink">Gallery</a>
-            <a href="contact.php" class="topnavLink active">Contact</a>
+            <a href="mitush.html" class="topnavLink ">Home</a>
+            <a href="gallery.html" class="topnavLink">Gallery</a>
+            <a href="contact.html" class="topnavLink active">Contact</a>
         </div>
         <!------------------This part is hidden - dropdown when 400px---------->
         <div id="navDropdown">
             <button id="navDropdownButton" onclick="dropdown()"><i class="fas fa-bars fa-2x"></i></button> <!--hidden-->
             <div id="navDropdownMenu" class="navDropdownMenu">
-                <a class="navDropdownItem" href="index.php">Home</a>
-                <a class="navDropdownItem" href="aboutme.php">About</a>
-                <a class="navDropdownItem" href="gallery.php">Gallery</a>
-                <a class="navDropdownItem" href="contact.php">Contact</a>
+                <a class="navDropdownItem" href="mitush.html">Home</a>
+                <a class="navDropdownItem" href="gallery.html">Gallery</a>
+                <a class="navDropdownItem" href="contact.html">Contact</a>
             </div>
         </div>
     </div>
@@ -45,7 +43,11 @@
         <div id="contactPageLeft">
             <h1 id="contactPageDetailTitle">Come Visit My Studio!</h1>
             <div id="contactPageDetail">
-                <h1 class="contactPageDetailHead">  <a class="contactPageDetailAnchor" href="https://www.waze.com/ul?ll=32.32902618%2C35.00450134&navigate=yes&zoom=16"><i class="fab fa-waze contactPageDetailAnchor"></i> Habambuc 10, Yad Hanna</a></h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3371.3720298409976!2d35.001508815571846!3d32.32872071401394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d170516f5b8b7%3A0xc19980e291d86a3b!2sYad%20Hana!5e0!3m2!1sen!2sil!4v1626796044336!5m2!1sen!2sil?q=center32.329015, 35.004427" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <h1 class="contactPageDetailHead">
+                    <a class="contactPageDetailAnchor" href="https://www.waze.com/ul?ll=32.32902618%2C35.00450134&navigate=yes&zoom=16">
+                        <i class="fab fa-waze contactPageDetailAnchor"></i> Habambuc 10, Yad Hanna</a>
+                </h1>
                 <h1 class="contactPageDetailHead">
                     <a href="https://www.facebook.com/Mitushjewelry/" class="contactPageDetailAnchor">
                     <i class="fab fa-facebook-square contactPageDetailIcon"></i>Facebook</a>
@@ -55,18 +57,27 @@
                    <i class="fab fa-instagram contactPageDetailIcon"></i>Instagram</a>
                 </h1>
             </div>
-
         </div>
         <div id="contactPageRight">
             <div id="contactFormDiv">
                 <h1 class="contactFormHead">Feel free - ask away!</h1>
-                <form class="contactForm" autocomplete="off" action="../scripts/contactForm.php" target="_self" method="post"> 
-                    <input type="text" name="name" class="contactInput" autocomplete="on" placeholder="Full name.." required>
-                    <input type="email" name="email" class="contactInput" autocomplete="on" placeholder="Email.." required>
-                    <input type="tel" name="usrtel" class="contactInput" autocomplete="on" placeholder="Phone number..">
-                    <input type="text" name="subject" class="contactInput" placeholder="What do you want to ask?" required> 
-                    <textarea type="text" name="message" class="contactMessage" maxlength="300" placeholder="Enter your message here.." required></textarea>
-                    <input type="submit" value="Send" class="contactSubmit" >
+                <form class="contactForm" autocomplete="off" action="" target="_self" method="post">
+                    <label for="name">
+                        <input id="name" type="text" name="name" class="contactInput" autocomplete="on" placeholder="Full name.." required>
+                    </label>
+                    <label for="email">
+                        <input id="email" type="email" name="email" class="contactInput" autocomplete="on" placeholder="Email.." required>
+                    </label>
+                    <label for="usrtel">
+                        <input id="usrtel" type="tel" name="usrtel" class="contactInput" autocomplete="on" placeholder="Phone number..">
+                    </label>
+                    <label for="subject">
+                        <input id="subject" type="text" name="subject" class="contactInput" placeholder="What do you want to ask?" required>
+                    </label>
+                    <label for="message">
+                        <textarea id="message" name="message" class="contactMessage" maxlength="300" placeholder="Enter your message here.." required></textarea>
+                    </label>
+                    <input type="submit" value="Send" class="contactSubmit">
                 </form>
             </div>
         </div>
@@ -81,9 +92,11 @@
         </div>
         
         <div id="newsletter">
-            <form class="emailForm" autocomplete="off" action="../scripts/newsletter.php" target="_self" method="post">
+            <form class="emailForm" autocomplete="off" action="" target="_self" method="post">
                 <h1 class="newsletterText">Sign up for my newsletter for special offers!</h1>
-                <input type="email" name="email" class="emailInput" >
+                <label for="newsletterEmail">
+                    <input id="newsletterEmail" type="email" name="email" class="emailInput" >
+                </label>
                 <input type="submit" value="Sign Up!" class="emailButton">
             </form>
         </div>
@@ -113,9 +126,11 @@
             </div>
             
             <div id="smallFooterNewsletter">
-                <form class="smallFooterEmailForm" autocomplete="off" action="./scripts/newsletter.php" target="_self" method="post">
+                <form class="smallFooterEmailForm" autocomplete="off" action="" target="_self" method="post">
                 <p class="smallFooterNewsletterText">Sign up for my newsletter <br> for special offers!</p>
-                <input type="email" name="email" class="smallFooterEmailInput" >
+                <label for="newsletterEmailSmall">
+                    <input id="newsletterEmailSmall" type="email" name="email" class="smallFooterEmailInput" >
+                </label>
                 <input type="submit" value="Sign Up!" class="smallFooterEmailButton">
             </form>
             </div>

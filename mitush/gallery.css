@@ -17,7 +17,7 @@
     border-bottom: solid 2px #AAF0D1;
 }
 
-#galleryTabDiv {   
+#galleryTabDiv {
     display: block;
     width: 90%;
     margin: 2vh auto;
@@ -46,11 +46,11 @@
 }
 
 .tabLink:hover {
-    background-color: rgb(170,240,209,0.7);
+    background-color: rgba(170, 240, 209, 0.7);
 }
 
 .activeTab {
-    background-color:  rgb(170,240,209,0.7);
+    background-color: rgba(170, 240, 209, 0.7);
 }
 
 #galleryContentDiv {
@@ -58,15 +58,16 @@
     width: 80%;
     margin: 0 auto;
 }
- 
+
 .tabContent {
-    display:inline;
+    display: inline;
 }
-    
+
 .galleryImage {
-   	display:inline-block;
-  	width:33%;
-  	height:auto;
+    display: inline-block;
+    width: 33%;
+    height: auto;
+    object-fit: cover;
 }
 
 .galleryImage:hover {
@@ -76,30 +77,31 @@
 
 .galleryOverlayOuterDivClass {
     display: none;
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
 }
 
 .galleryOverlayInnerDiv {
-    width:60%;
-    height: 512px;
-	position: absolute;
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%,-50%);
-  	-ms-transform: translate(-50%,-50%);
-    background-color:white;	
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
 }
 
 .galleryOverlayXButtonClass {
-    display: inline-block;
+    display: inline;
     position: absolute;
     right: 0;
     margin: 1vh;
@@ -115,72 +117,69 @@
 }
 
 .galleryOverlayLeftDiv {
-	float:left;
-	width: 30vw;
-  	height: 30vw;
-  	overflow: hidden;
+    float: left;
+    width: 30vw;
+    height: 30vw;
+    overflow: hidden;
 }
 
 .galleryOverlayImageClass {
-  	object-fit: contain;	
-	max-width:100%;
-    max-height:auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .galleryOverlayText {
-    float:left;
+    float: left;
     width: 47%;
-	padding:1vh;
+    padding: 1vh;
 }
 
 .galleryOverlayHeadClass {
     text-align: center;
-	width: 80%;
-	margin: 1vh auto;
-    padding:1vh 2vh;
+    width: 80%;
+    margin: 1vh auto;
+    padding: 1vh 2vh;
     border-bottom: solid 1px #AAF0D1;
-	font-family: 'Josefin Slab', serif;
+    font-family: 'Josefin Slab', serif;
     text-decoration: none;
-    font-size:2em;
+    font-size: 2em;
     font-weight: bold;
 }
 
 .galleryOverlayTextClass {
-	float: left;
+    float: left;
     width: 100%;
     text-align: right;
     padding-left: 1vh;
-	font-family: 'Josefin Slab', serif;
+    font-family: 'Josefin Slab', serif;
     text-decoration: none;
-    font-size:1.2em;
+    font-size: 1.2em;
     line-height: 1em;
 }
 
 .galleryOverlayPriceClass {
-    font-size:1.5em;
+    font-size: 1.5em;
     font-weight: 600;
     text-align: center;
 }
 
-.galleryOverlayMarmeladaText{
+.galleryOverlayMarmeladaText {
     font-family: 'Josefin Slab', serif;
     text-decoration: none;
-    font-size:1.3em;
+    font-size: 1.3em;
     text-align: center;
     border-bottom: solid 1px #AAF0D1;
     padding-bottom: 1vh;
 }
 
 .galleryOverlayMarmeladaContactAnchorClass {
-    display: block;
-    float: left;
-    padding: 0 2vh;
-    margin: 0 1vh;
+    padding: 1vh 2vh;
+    margin: 1vh auto;
     border: solid 1px #AAF0D1;
     font-family: 'Josefin Slab', serif;
     text-decoration: none;
-    font-size:1.1em;
-  	color:black;
+    font-size: 1.1em;
+    color: black;
     font-weight: bold;
     background-color: transparent;
 }
@@ -215,7 +214,7 @@
         margin: 1vh;
     }
 
-    #galleryTabDiv {   
+    #galleryTabDiv {
         display: block;
         width: 100%;
         margin: 2vh auto;
@@ -226,24 +225,24 @@
         width: 95%;
         margin: 0 auto;
     }
-  	
-  	.galleryImage {
-   		width: 30%; 
-  	}
+
+    .galleryImage {
+        width: 30%;
+    }
 
     .galleryOverlayInnerDiv {
         display: block;
-        width:80%;
+        width: 80%;
         height: 80%;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
-        -ms-transform: translate(-50%,-50%);
-        background-color:white;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: white;
         overflow: hidden;
     }
-    
+
     .galleryOverlayLeftDiv {
         display: block;
         width: 60%;
@@ -251,46 +250,46 @@
         height: auto;
         overflow: hidden;
     }
-    
-    
+
+
     .galleryOverlayText {
         width: 80%;
-        padding:1vh;
+        padding: 1vh;
         margin: 0 5vh;
         line-height: 1vh;
     }
-    
+
     .galleryOverlayHeadClass {
         width: 80%;
-        margin: 0vh 6vh;
-        padding:0vh 0 1vh;
+        margin: 0 6vh;
+        padding: 0 0 1vh;
         border-bottom: solid 1px #AAF0D1;
         font-family: 'Josefin Slab', serif;
         text-decoration: none;
-        font-size:2em;
+        font-size: 2em;
         font-weight: 600;
     }
-    
+
     .galleryOverlayTextClass {
         width: 100%;
         text-align: center;
-        line-height: 1.5em; 
+        line-height: 1.5em;
     }
-    
+
     .galleryOverlayMarmeladaText {
         width: 100%;
         margin: 0 auto 2vh;
     }
 
     .galleryOverlayMarmeladaClass {
-        width:99%;
+        width: 99%;
     }
 
     .galleryOverlayMarmeladaContactAnchorClass {
         font-size: 1.2em;
     }
 
-    
+
     .galleryOverlayMarmeladaIcon {
         margin: 0 8.5vh;
     }
@@ -303,19 +302,20 @@
     }
 
     .tabLink {
-        margin: none;
-        padding: 8px 10px;    
+        margin: 0;
+        padding: 8px 10px;
     }
 
     .galleryOverlayInnerDiv {
         height: 90%;
     }
+
     .galleryOverlayTextClass {
         margin: 1vh 0;
         font-size: 1.2em;
         line-height: 1.5em;
     }
-    
+
     .galleryOverlayMarmeladaText {
         line-height: 2vh;
     }
@@ -327,28 +327,29 @@
 }
 
 @media only screen and (max-width: 415px) {
-	
-  	#galleryContentDiv {
+
+    #galleryContentDiv {
         display: block;
         width: 100%;
         margin: 0 auto;
     }
-  	
-  	.galleryImage {
-   		width: 80%; 
-  	}
-  
+
+    .galleryImage {
+        width: 80%;
+    }
+
     .galleryOverlayInnerDiv {
-        width:100%;
+        width: 100%;
         height: 80%;
     }
-   
+
     .galleryOverlayImageClass {
         width: 80%;
         margin: 0 1vh;
     }
+
     .galleryOverlayTextClass {
-        margin: 0vh auto;
+        margin: 0 auto;
         font-size: 1em;
     }
 
@@ -356,11 +357,11 @@
         margin: 0 2vh;
     }
 
-    .galleryOverlayHeadClass{
+    .galleryOverlayHeadClass {
         font-size: 1.3em;
         padding-bottom: 2vh;
     }
-    
+
     .galleryOverlayPriceClass {
         font-size: 1.3em;
     }
@@ -369,7 +370,7 @@
         line-height: 2.5vh;
         font-size: 1em;
     }
-    
+
     .galleryOverlayMarmeladaContactAnchorClass {
         font-size: 1.1em;
         margin: 1vh 0 0;

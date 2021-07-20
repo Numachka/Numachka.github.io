@@ -173,6 +173,10 @@ body {
   width: 100%;
 }
 
+.mitushProjectImage {
+  box-shadow: none;
+}
+
 .projectDetails {
   padding: 2vh;
   display: flex;
