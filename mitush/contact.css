@@ -1,0 +1,144 @@
+/*----------------------------CONTACT PAGE START--------------------------*/
+#contactPageDiv {
+    display: block;
+    width: 100%;
+}
+
+#contactPageLeft{
+    display: block;
+    width: 49%;
+    float: left;
+    padding: 5vh 0;
+    text-align: center;
+    border-right: solid 1.5px #AAF0D1;
+}
+
+#contactPageDetailTitle{
+    display: block;
+    width: 70%;
+    margin: 5vh auto;
+    font-family: 'Josefin Slab', serif;
+    text-decoration: none;
+    color: black;
+    font-size: 3em;
+}
+
+#contactMapDiv {
+    display: block;
+    width: 70%;
+    height: 250px;
+    margin: 2vh auto;
+    border-bottom: solid 1.5px #AAF0D1;
+    border-left: solid 1.5px #AAF0D1;
+    background-color: gray;
+}
+
+.contactPageDetailHead {
+    display: block;
+    width: 50%;
+    margin: 5vh auto;
+    padding: 1vh;
+    font-family: 'Josefin Slab', serif;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    border-bottom: solid 1.5px #AAF0D1;
+}
+
+.contactPageDetailAnchor {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+}
+
+.contactPageDetailIcon {
+    margin-right: 10px
+}
+
+#contactPageRight{
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+#contactFormDiv {
+    display: block;
+    width: 100%;
+    padding: 5vh 0;
+    text-align: center;
+}
+
+.contactFormHead {
+    display: block;
+    width: 80%;
+    margin: 5vh auto;
+    font-family: 'Josefin Slab', serif;
+    text-decoration: none;
+    color: black;
+    font-size: 3em;
+}
+
+.contactInput {
+    display: block;
+    width: 80%;
+    margin: 3vh auto;
+    padding: 1vh 2vh;
+    font-family: 'Josefin Slab', serif;
+    color: black;
+    font-size: 2em;
+    border: none;
+    border-bottom: solid 1.5px #AAF0D1;
+}
+
+.contactMessage {
+    display: block;
+    width: 80%;
+    height: 20vh;
+    margin: 3vh auto;
+    padding: 2vh;
+    font-family: 'Josefin Slab', serif;
+    color: black;
+    font-size: 1.5em;
+    border: none;
+    border: solid 1.5px #AAF0D1;
+}
+
+.contactSubmit {
+    display: block;
+    width: 84%;
+    height: 6vh;
+    margin: 3vh auto;
+    font-family: 'Josefin Slab', serif;
+    color: black;
+    font-size: 2em;
+    background-color:#AAF0D1;
+    border-radius: 5px;
+    border: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    #contactPageLeft{
+        display: block;
+        width: 100%;
+        float: left;
+        padding: 5vh 0;
+        text-align: center;
+        border-right: solid 1.5px #AAF0D1;
+    }
+
+    #contactPageRight{
+        display: block;
+        width: 100%;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .contactFormHead {
+        font-size: 2em;
+    }
+}
+
+
+/*-----------------------CONTACT PAGE END----------------------------*/

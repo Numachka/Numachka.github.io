@@ -1,0 +1,976 @@
+/*------------------------GENERAL SETTINGS-------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+}
+/*----------------------HIDDEN DROPDOWN-----------------------------*/
+#navDropdown {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+#navDropdownButton {
+    display: block;
+    width: 100%;
+    padding: 1vh;
+    background-color:white;
+    color: black;
+    border: none;
+    border-top: solid 1.5px #AAF0D1;
+    border-bottom: solid 1.5px #AAF0D1;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+#navDropdownMenu {
+    display: none;
+    width: 100%;
+}
+
+.navDropdownItem {
+    display: block;
+    width: 50%;
+    margin: 1vh auto;
+    padding: 5px 0;
+    font-family: 'Assistant', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    border-bottom: solid 1.5px #AAF0D1;
+}
+
+.navDropdownItem:hover {
+    background-color: rgba(170,240,209,0.7);
+}
+
+.show {
+    display: none;
+}
+
+/*-----------------------------GENERAL HEADER START-------------------------*/
+
+#topnavDiv {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+
+#topnavLogoDiv {
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 0;
+    transition: top 0.3s;
+}
+
+.topnavLogoAnchor {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+#topnavLogo {
+    display: block;
+    width: 10%;
+    margin: 0 auto;
+}
+
+#topnavButtonDiv {
+    display: block;
+    width: 60%;
+    margin: 2vh auto;
+    text-align: center;
+    transition: top 0.3s;
+}
+
+.topnavLink {
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.5em;
+    color: black;
+    padding: 1vh 1vw;
+    text-decoration: none;
+}
+
+.topnavLink:hover {
+    border-bottom: solid 2px #AAF0D1;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.active {
+    border-bottom: solid 1px #AAF0D1;
+    font-weight: bold;
+}
+/*-------------------GENERAL HEADER END--------------------------------*/
+/*------------------GENERAL HEADER MEDIA QUERRY START------------------*/
+
+@media only screen and (max-width: 415px) {
+    #topnavLogo{
+        width: 30%;
+        margin: 1vh auto;
+    }
+
+    #topnavButtonDiv {
+        display: none;
+    }
+
+    #navDropdown {
+        display: block;
+    }
+}
+
+/*--------------------GENERAL HEADER MEDIA QUERRY END--------------------*/
+/*-----------------------FOOTER START--------------------------------*/
+#footer {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: block;
+    width: 90%;
+    height: 20vh;
+    margin: 0 auto;
+}
+
+#footerSocialDiv {
+    display: block;
+    float: right;
+    width: 33%;
+    height: 20vh;
+    text-align: center;
+    border-left: solid 2px #AAF0D1
+}
+
+#footerContactDiv {
+    position: relative;
+    display: block;
+    float: right;
+    width: 33%;
+    height: 20vh;
+    text-align: center;
+    border-left: solid 2px #AAF0D1
+}
+
+#footerContactRightDiv {
+    position: absolute;
+    top:0;
+    right: 0;
+    margin: 0 6vh;
+}
+
+#footerContactLeftDiv {
+    position: absolute;
+    top:0;
+    left: 0;
+    margin: 0 6vh;
+}
+
+#footerMapDiv {
+    display: block;
+    float: right;
+    width: 33%;
+    height: 20vh;
+
+}
+
+.footerText {
+    font-family: 'Assistant', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
+.footerSocialIcon {
+    text-decoration: none;
+    color: #AAF0D1;
+    margin: 0 1vh;
+}
+
+#footerContactButton {
+    text-decoration: none;
+    color: black;
+}
+
+.footerContactButtonText {
+    border: solid 1px #AAF0D1;
+    padding: 2px 5px;
+}
+
+.footerContactButtonText:hover {
+    font-weight: bold;
+    background-color: #AAF0D1;
+    opacity: 0.7;
+    transition: 0.6s;
+}
+
+.footerMapHead {
+    border-bottom: solid 1px #AAF0D1;
+    width: 25%;
+    margin: 2.5vh 2vh 0;
+}
+
+.footerMapAnchorText {
+    display: inline-block;
+    width: 15%;
+    margin:3vh 2vh;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.footerMapAnchorText:hover {
+    border-bottom: solid 1px #AAF0D1;
+    font-weight: bold;
+    transition:  0.6s;
+}
+
+@media only screen and (max-width:1366px) {
+    #footer {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    #footerContactRightDiv {
+        position: initial;
+        top:auto;
+        right: auto;
+        margin: 0 4vh;
+    }
+
+    #footerContactLeftDiv {
+        position: initial;
+        top:auto;
+        left: auto;
+        margin: 0 4vh;
+    }
+
+    .footerContactButtonText {
+        border: solid 1px #AAF0D1;
+        padding: 2px 5px;
+        font-weight: bold;
+        background-color: #AAF0D1;
+        opacity: 0.7;
+    }
+
+    .footerMapHead {
+        border-bottom: solid 1px #AAF0D1;
+        width: 40%;
+        margin: 1.7vh 2vh 0;
+    }
+
+    .footerMapAnchorText {
+        display: inline-block;
+        width: 30%;
+        margin:3vh 2vh;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width:415px) {
+    #footerSocialDiv {
+        width: 100%;
+        height: auto;
+        border-left: none;
+    }
+
+    #footerContactDiv {
+        position: relative;
+        display: block;
+        float: right;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        border-left: none
+    }
+
+    #footerMapDiv {
+        display: block;
+        float: right;
+        width: 100%;
+        height: auto;
+        border-top: solid 2px #AAF0D1;
+    }
+
+    .footerMapHead {
+        border-bottom: solid 1px #AAF0D1;
+        width: 40%;
+        margin: 1.7vh auto;
+    }
+
+    .footerMapAnchorText {
+        display: inline-block;
+        width: 25%;
+        margin:3vh 5vh;
+        font-size: 1.2em;
+        text-align: center;
+    }
+}
+/*---------------------------FOOTER END------------------------------*/
+
+/*--------------------GENERAL HEADER MEDIA QUERRY END--------------------*/
+/*-----------------------FOOTER START--------------------------------*/
+#footer {
+    display: block;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    float: left;
+    border-top: solid 2px #AAF0D1;
+}
+
+#newsletter {
+    display: block;
+    float: left;
+    width: 40%;
+    text-align: center;
+    padding: 3vh;
+}
+
+.newsletterText {
+    display: inline;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.7em;
+}
+
+.emailInput {
+    border: none;
+    border-bottom: solid 3px #AAF0D1;
+    padding: 1vw;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.7em;
+    color: black;
+}
+
+.emailInput:focus {
+    background-color: white;
+}
+
+.emailButton {
+    border: none;
+    border-bottom: solid 3px #AAF0D1;
+    border-right: solid 3px #AAF0D1;
+    background-color: white;
+    margin-top: 3vh;
+    padding: 1vw;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.7em;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+#social {
+    display: block;
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+.socialIcon {
+    color: #AAF0D1;
+    margin:  2vh 1vh;
+}
+
+.socialAnchor {
+    text-decoration: none;
+}
+
+.socialText {
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.8em;
+}
+
+#contact {
+    position: relative;
+    display: block;
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 3vh 0;
+}
+
+.contactHead {
+    display: inline;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.8em;
+}
+
+.contactNumber {
+    font-family: 'Josefin Slab', serif;
+    font-size: 2em;
+}
+
+.contactIcon {
+    display: inline;
+    color: #AAF0D1;
+    position: relative;
+    top: 0.5vh;
+}
+/*-------------------------------COPYRIGHT---------------------------*/
+#copyright {
+    display: block;
+    box-sizing: border-box;
+    width: 90%;
+    float: left;
+    margin-left: 1vh;
+}
+
+.copyrightIcon {
+    display: inline;
+    position: relative;
+    top: 15px;
+    margin-left: 0.2vw;
+    color: #AAF0D1
+}
+
+.copyrightText {
+    display: block;
+    float: left;
+    font-family: 'Josefin Slab', serif;
+}
+/*---------------------HIDDEN ELEMENTS----------------------------*/
+#footer {
+    padding: 0;
+}
+
+#smallFooter {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+#smallFooterContact {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.smallFooterText {
+    font-family: 'Josefin Slab', serif;
+    font-weight: 800;
+}
+
+.smallFooterSocialIcon {
+    font-size: 1.5em;
+    color: #AAF0D1;
+}
+
+.smallFooterSocialAnchor {
+    text-decoration: none;
+}
+
+#smallFooterNewsletter {
+    display: block;
+    width: 100%;
+    padding: 1px;
+    background-color: #AAF0D1;
+}
+
+.smallFooterNewsletterText {
+    font-family: 'Josefin Slab', serif;
+    font-weight: 800;
+}
+
+.smallFooterEmailForm {
+    margin-bottom: 4px;
+}
+
+.smallFooterEmailInput {
+    border: none;
+    border-bottom: solid 2px #AAF0D1;
+    padding: 5px;
+    font-family: 'Josefin Slab', serif;
+    color: black;
+}
+
+.smallFooterEmailButton {
+    border: none;
+    border-bottom: solid 2px #AAF0D1;
+    border-right: solid 2px #AAF0D1;
+    background-color: white;
+    padding: 5px;
+    font-family: 'Josefin Slab', serif;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+@media only screen and (max-width: 450px) {
+    #social,#newsletter,#contact,#copyright {
+        display: none;
+    }
+
+    #smallFooter{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #social {
+        width: 30%;
+        padding: 2vh 0;
+    }
+
+    #social h1 {
+        font-size: 1.5em;
+    }
+
+    #social i {
+        font-size: 2em;
+    }
+
+    #newsletter {
+        width: 30%;
+    }
+    #newsletter h1 {
+        font-size: 1.5em;
+    }
+
+    .emailInput {
+        font-size: 1em;
+    }
+
+    .emailButton {
+        font-size: 1em;
+    }
+    #contact {
+        width: 30%;
+    }
+    #contact h1 {
+        font-size: 1.5em;
+    }
+    #contact i {
+        top: 3px;
+    }
+}
+/*---------------------------FOOTER END------------------------------*/
+
+
+
+/*----------------------------INDEX LANDER VIDEO------------------*/
+
+#landerDiv {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+#landerVideo {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+}
+
+@media only screen and (max-width: 1024px) {
+    #landerDiv {
+        height: initial;
+    }
+
+    #landerVideo {
+        display: none;
+    }
+
+}
+
+
+/*--------------------INDEX HEADER--------------------------------------*/
+
+#header {
+    display: block;
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+#logoDiv {
+    display: inline;
+    
+}
+
+#logoImage {
+    width: 15%;
+    margin: 10vh;
+}
+
+#navbarButtons {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5vh 5vh;
+    padding: 5vh;
+}
+
+.navLink {
+    display: inline;
+    font-family: 'Josefin Slab', serif;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: white;
+    padding: 2vh 1vw;
+}
+
+.navLink:hover, .active {
+    border-bottom: solid 2px #AAF0D1;
+    transition: 0.22225s;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1024px) {
+    #header {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: initial;
+        z-index: 1;
+    }
+
+    #logoDiv {
+        display: block;
+        float: none;
+        
+    }
+
+    #logoImage {
+        display: block;
+        width: 30%;
+        margin: 5vh auto;
+    }
+    
+    #navbarButtons {
+        display: block;
+        width:100%;
+        position: initial;
+        bottom: auto;
+        right: auto;
+        margin: 5vh auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    .navLink {
+        font-size: 1.8em;
+        color: black;
+        padding: 2vh 1vh;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .navLink {
+        font-size: 1.8em;
+        color: black;
+        padding: 2vh 1vh;
+    }
+
+    #navbarButtons {
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    #navbarButtonsHider {
+        display: none;
+    }
+    #navDropdown {
+        display: block;
+    }
+}
+
+
+/*----------------------INDEX ABOUT START---------------------------------------*/
+
+#aboutDiv {
+    display: block;
+    width: 99%;
+    margin: 20vh auto 40vh;
+    text-align: center;
+}
+
+#aboutPortrait {
+    width: 30%;
+    position: relative;
+    top: 7vh;
+    left: 14vh;
+    z-index: -1;
+    border-radius: 10%;
+}
+
+#aboutTextDiv {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10%;
+    position: relative;
+    left: 3vw;
+    width: 60%;
+    padding: 2vh;
+}
+
+.aboutHead, .aboutText {
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.8em;
+    color: black;
+}
+
+.aboutHead {
+    display: inline-block;
+    width: 70%;
+    font-size: 2em;
+    border-bottom: solid 2px #AAF0D1;
+    text-align: center;
+}
+
+.aboutText {
+    text-align: left;
+    padding: 0 4vh;
+}
+
+.aboutAnchor {
+    margin-left: 40vh;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.8em;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}   
+
+.aboutAnchor:hover {
+    border-bottom: solid 2px #AAF0D1;
+    transition: 0.3s;
+}
+
+/*---------------------ABOUT MEDIA QUERRY START---------------------*/
+/* small devices (phones,landscape phones, 400px and up) */
+@media only screen and (max-width: 415px) {
+    #aboutDiv {
+        margin: 5vh 0;
+        padding: 0;
+    }
+
+    #aboutPortrait {
+        display: block;
+        position: initial;
+        width: 350px;
+        margin: 10vh auto;
+
+    }
+
+    #aboutTextDiv {
+        display: block;
+        width: auto;
+    }
+
+    .aboutHead, .aboutText {
+        font-family: 'Josefin Slab', serif;
+        font-size: 1.5em;
+        color: black;
+    }
+    
+    .aboutHead {
+        display: inline-block;
+        width: 70%;
+        border-bottom: solid 2px #AAF0D1;
+    }
+
+    .aboutAnchor {
+        font-family: 'Josefin Slab', serif;
+        font-size: 1em;
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+    }  
+
+} 
+
+/* Large devices (portrait tablets, landscape large phones, 1024px and up) */
+@media only screen and (max-width: 1024px) {
+
+    #aboutDiv {
+        display: block;
+        width: 99%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #aboutTextDiv {
+        width:80%;
+      	margin: 3vh auto;
+        text-align: center;
+      	padding: 0;
+      	position: initial;
+    	left: auto;
+    }
+
+    #aboutPortrait {
+        position: initial;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .aboutAnchor {
+        margin-left: 0;
+        font-family: 'Josefin Slab', serif;
+        font-size: 1.8em;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+    }  
+
+}
+
+
+/*---------------------ABOUT MEDIA QUERRY END----------------------*/
+
+/*---------------------INDEX ABOUT END-------------------------*/
+
+
+#indexDecorations {
+    display: block;
+    width: 50%;
+    margin: 15vh auto 5vh;
+    text-align: center;
+}
+
+.indexDecoratingText {
+    display: block;
+    font-family: 'Josefin Slab', serif;
+    font-size: 2.5em;
+    color: black;
+    border-bottom:solid 2px #AAF0D1; 
+}
+
+/*------------------------INDEX PRODUCTS START------------------*/
+
+#productsDiv {
+    display: block;
+    width: 90%;
+    margin: 20vh auto;
+    text-align: center;
+}
+
+#productRingDiv {
+    background-image: url(../resources/images/mitushImages/rings4.jpg);
+    background-position: 10% 5%;
+    background-size: cover;
+}
+
+#productEarringDiv {
+    background-image: url(../resources/images/mitushImages/earrings1.jpg);
+    background-position: 30% 5%;
+    background-size: cover;
+}
+
+#productBraceletDiv {
+    background-image: url(../resources/images/mitushImages/bracelet1.jpg);
+    background-position: 30% 5%;
+    background-size: cover;
+}
+
+#productNecklaceDiv {
+    background-image: url(../resources/images/mitushImages/necklace1.jpg);
+    background-position: 10% 0;
+    background-size: cover;
+}
+
+.productDiv {
+    position: relative;
+    display: inline-block;
+    margin: 1vh;
+    width: 14%;
+    height: 70vh;
+    border: solid 1px #AAF0D1;
+    transition: 0.7s;
+}
+
+.productAnchor{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    text-decoration: none;
+}
+
+.productDiv:hover {
+    width: 40%;
+    transition: 0.7s;
+    opacity: 0.5;
+}
+
+.productHead {
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.6em;
+    color: black;
+}
+
+/*---------------------INDEX PRODUCT MEDIA QUERRY START--------------------*/
+/* Medium devices (portrait large phones,landscape phones, 768px and up) */
+
+@media only screen and (max-width: 400px) {
+    .productDiv {
+        width: 45%;
+        height: 20vh;
+        background-size: 300% 300%;
+    }
+
+    .productHead {
+        font-size: 1.5em;
+    }
+
+    .indexDecoratingText {
+        font-size: 1.5em;
+    }
+} 
+
+/* Large devices (portrait tablets, landscape large phones, 1024px and up) */
+@media only screen and (max-width: 1024px) {
+    #productsDiv {
+        margin: 1vh auto 10vh;
+    }
+    
+
+    #productRingDiv { 
+        background-position: 5% 8%;
+    }
+    
+    #productEarringDiv {
+        background-position: 5% 45%;
+    }
+    
+    #productBraceletDiv {
+        background-position: 20% 60%;
+    }
+    
+    #productNecklaceDiv {
+        background-position: 0 15%;
+    }
+    
+    .productDiv {
+        width: 45%;
+        height: 20vh;
+        border: none;
+        margin: 0.2vh;
+    }
+
+}
+
+/*----------------------INDEX PRODUCT MEDIA QUERRY END--------------------------------*/
+
