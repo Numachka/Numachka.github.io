@@ -290,22 +290,28 @@ body {
 .mitushLink {
   color: #a20058;
 }
-.mitushLink .mitushLink:visited {
+
+.mitushLink:visited {
   color: #a20058;
+  text-decoration: none;
 }
 
 .collegeFinanceLink {
   color: #51a7a7;
 }
-.collegeFinanceLink .mitushLink:visited {
+
+.collegeFinanceLink:visited {
   color: #51a7a7;
+  text-decoration: none;
 }
 
 .droughtLink {
   color: #dda448;
 }
-.droughtLink .mitushLink:visited {
+
+.droughtLink:visited {
   color: #dda448;
+  text-decoration: none;
 }
 
 @media (max-width: 1025px) {
