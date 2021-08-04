@@ -13,6 +13,7 @@ $droughtColor: #dda448
 $breakpoint-medium: 1025px
 $breakpoint-small: 400px
 
+
 /*--------------------GENERAL--------------------*/
 /* apply a natural box layout model to all elements, but allowing components to change */
 html
@@ -213,12 +214,15 @@ body
   justify-content: center
   height: 30vh
   width: 30vh
-  box-shadow: rgba(17, 17, 26, 0.1) 0 4px 16px, rgba(17, 17, 26, 0.05) 0 8px 32px
+  //box-shadow: rgba(17, 17, 26, 0.1) 0 4px 16px, rgba(17, 17, 26, 0.05) 0 8px 32px
 
 .projectImage img
   width: 100%
 
 .mitushProjectImage
+  box-shadow: none
+
+.collegeFinanceImage
   box-shadow: none
 
 .projectDetails
@@ -254,15 +258,20 @@ body
 .projectLink
   margin: 1vh
   text-align: center
-
 .mitushLink
   color: $mitushColor
+  .mitushLink:visited
+    color: $mitushColor
 
 .collegeFinanceLink
   color: $collegeFinanceColor
+  .mitushLink:visited
+    color: $collegeFinanceColor
 
 .droughtLink
   color: $droughtColor
+  .mitushLink:visited
+    color: $droughtColor
 
 @media (max-width: $breakpoint-medium)
   .projectArticleWrapper

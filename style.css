@@ -231,7 +231,6 @@ body {
   justify-content: center;
   height: 30vh;
   width: 30vh;
-  box-shadow: rgba(17, 17, 26, 0.1) 0 4px 16px, rgba(17, 17, 26, 0.05) 0 8px 32px;
 }
 
 .projectImage img {
@@ -239,6 +238,10 @@ body {
 }
 
 .mitushProjectImage {
+  box-shadow: none;
+}
+
+.collegeFinanceImage {
   box-shadow: none;
 }
 
@@ -287,12 +290,21 @@ body {
 .mitushLink {
   color: #a20058;
 }
+.mitushLink .mitushLink:visited {
+  color: #a20058;
+}
 
 .collegeFinanceLink {
   color: #51a7a7;
 }
+.collegeFinanceLink .mitushLink:visited {
+  color: #51a7a7;
+}
 
 .droughtLink {
+  color: #dda448;
+}
+.droughtLink .mitushLink:visited {
   color: #dda448;
 }
 
